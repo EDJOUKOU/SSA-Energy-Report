@@ -100,6 +100,7 @@ ORDER BY Avg_GDP DESC
 LIMIT 10;
 
 GDP Ranking by Region
+
 SELECT region, 
        ROUND(AVG(GDP_p)) AS Avg_GDP
 FROM ssa S  
@@ -109,6 +110,7 @@ GROUP BY region
 ORDER BY Avg_GDP DESC;
 
 Electric Power Consumption by Country
+
 SELECT country_name, 
        ROUND(AVG(E_power)) AS Avg_power
 FROM ssa S  
@@ -119,6 +121,7 @@ ORDER BY Avg_power DESC
 LIMIT 10;
 
 Electric Power Consumption by Region
+
 SELECT region, 
        ROUND(AVG(E_power)) AS Avg_power
 FROM ssa S  
@@ -128,6 +131,7 @@ GROUP BY region
 ORDER BY Avg_power DESC;
 
 CO2 Emissions by Region
+
 SELECT region, 
        ROUND(AVG(CO2)) AS Avg_CO2
 FROM ssa S  
@@ -137,6 +141,7 @@ GROUP BY region
 ORDER BY Avg_CO2 DESC;
 
 CO2 Emissions by Country
+
 SELECT country_name, 
        ROUND(AVG(CO2)) AS Avg_CO2
 FROM ssa S  
